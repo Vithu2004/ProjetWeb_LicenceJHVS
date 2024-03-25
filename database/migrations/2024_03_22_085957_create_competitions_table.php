@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('sport_id');
             $table->foreignId('lieu_id');
+            $table->string('nom');
             $table->string('date');
             $table->string('heure_de_debut');
             $table->string('heure_de_fin');

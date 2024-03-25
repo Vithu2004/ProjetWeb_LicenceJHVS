@@ -4,13 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Competition;
 
-class Sport extends Model
+class Reservation extends Model
 {
     use HasFactory;
+    
+    public function personne(){
+        return $this -> hasMany(Personne::class);
+    }
 
     public function competition(){
-        return $this -> hasMany(Competition::class);
+        return $this -> belongsTo(Competition::class);
     }
 }
