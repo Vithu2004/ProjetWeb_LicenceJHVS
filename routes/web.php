@@ -14,9 +14,11 @@ Route::get('/gerant', function () {
 
 Route::get('/billeterie', [BilleterieController::class, 'getCompetitionName']) -> name('billeterie');
 
-Route::post('/billeterie_personne', [BilleterieController::class, 'createReservation']) -> name('acheter_billet');
+Route::post('/billeterie_competition', [BilleterieController::class, 'gestionFormReservation']) -> name('acheter_billet');
 
-Route::post('/achat_complet', [BilleterieController::class, 'createPersonnes']) -> name('acheter_billet_personne');
+Route::post('/billeterie_personne', [BilleterieController::class, 'createReservations']) -> name('acheter_billet_competition');
+
+Route::post('achat_complet', [BilleterieController::class, 'createPersonnes']) -> name('acheter_billet_personne');
 
 Route::post('/v', [GerantController::class, 'createLieu']) -> name('createLieu');
 
