@@ -16,9 +16,9 @@ return new class extends Migration
             $table->foreignId('sport_id');
             $table->foreignId('lieu_id');
             $table->string('nom');
-            $table->string('date');
-            $table->string('heure_de_debut');
-            $table->string('heure_de_fin');
+            $table->date('date');
+            $table->integer('heure_de_debut');
+            $table->integer('heure_de_fin');
             $table->integer('prix_du_billet');
             $table->timestamps();
         });

@@ -1,0 +1,49 @@
+tr, td{
+    border : 2px solid black;
+}
+
+.jo-calendrier-heure-heure > p{
+    height : 35px;
+}
+
+.jo-calendrier-heure {
+    height: 50px;
+    border : 1px solid lightgray;
+}
+
+.jo-calendrier-sport{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    color : white;
+    background: darkred;
+    font-size : 1vw;
+}
+
+.jo-calendrier-sport .jo-calendrier-sport-detail{
+    display : none;
+}
+
+.jo-calendrier-sport:hover{
+    width : 350px;
+}
+
+.jo-calendrier-sport:hover .jo-calendrier-sport-detail{
+    display : block;
+}
+
+.jo-form{
+    display : flex;
+    flex-direction : column;
+}
+
+.jo-form input{
+    max-width : 300px;
+}
+
+.gerant, .billeterie, .achat{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
